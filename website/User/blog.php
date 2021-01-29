@@ -78,8 +78,8 @@ if(isset($_POST['submit']))
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Don’t Just Watch. Watch Standard
-        <small>Green video </small>
+      <h1 class="my-4">Don’t Just Learn. Learn Standard
+        <small>Music Tutor </small>
       </h1>
 		<form method="POST"> 
           <div class="form_settings">
@@ -129,7 +129,7 @@ if(isset($_POST['submit']))
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">VASU MALAVIYA</p>
+        <p class="m-0 text-center text-white">Music Tutor </p>
       </div>
       <!-- /.container -->
     </footer>

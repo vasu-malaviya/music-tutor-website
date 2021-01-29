@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://secure.campaigner.com/CSB/Public/Form.aspx?fid=1485770 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Sign Up form
+</title>
+    <style type="text/css">
+        .ErrorMessageArea { padding: 10px 0 10px 10px; color: Red; font-family: Times New Roman, Arial, Sans-Serif; font-size: large; }
+        .formContainer { margin: 0 auto !important; width: 480px !important; }
+        form { display: block; overflow: auto; margin-left:0; padding: 0 12px 5px 0; }
+        #gridContainer { overflow:auto; }
+        #FormFieldsTable label { width: 10em;position:relative;top:-3px;}
+        label.error { white-space:nowrap; display:block; color: red; padding-left: .5em; vertical-align: top; padding:2px }
+        .submit { margin-left: 12em; }
+        .ui-datepicker-trigger { margin-left: 4px;}
+        .MailingListSection { margin-left:13px; margin-top:5px; text-align:left; padding:8px 1px 1px 0; }
+        .MailingListSection div { padding: 0 0 0 7px; }
+        .MailingListHeader { margin-bottom:5px; }
+        .LanguageDropdown { width: 480px !important; margin: 0 auto !important; height: 30px;}
+        .LanguageDropdownList { float:right; }
+        .MailingListSection > .SignupFormPreview { overflow: hidden; text-overflow: ellipsis; } 
+        .SignupFormPreview select { max-width: 204px; } 
+        .otherMargin {margin-left:10px}
+        .pnlMargin { margin-left:3px}
+    </style>
+    
+        <link href="./jquery-ui-1.8.2.css" rel="stylesheet" type="text/css">
+        <script src="./jquery-latest.min.js.download" type="text/javascript"></script>
+		<script src="./jquery-ui-latest.min.js.download" type="text/javascript"></script>
+    
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            $(".datepicker").datepicker({ showOn: 'button', buttonImage: '../images/Toolbar/newAppointment.gif', buttonImageOnly: true, dateFormat: 'yy-mm-dd', constrainInput: true, changeMonth: true, changeYear: true, yearRange: "1900:+10", onSelect: function (dateText, inst) { inst.input.trigger("focus"); } });
+            var dateFormat = "yyyy-mm-dd";
+            $(".datepicker").attr("title", dateFormat).attr("format", dateFormat);
+
+            // Force the calender to stay hidden till it's being invoked through the calendar icon
+            $(".ui-helper-clearfix").css("display", "none");
+        });
+
+
+
+
+    function setCheckBox(control)
+    {
+        var txtBox = $(control);
+        // Get the accompanying checkbox for the Other textfield
+        var chk = $(txtBox.closest('input').prev().find('[type=checkbox]'))
+
+        // Check the Other checkbox when adding text
+        if (!chk.attr('checked'))
+        {
+            chk.prop('checked', true);
+        }
+        // Clear the checkbox if textbox is empty
+        if(txtBox.val() === "")
+        {
+            chk.prop('checked', false);
+        }
+
+    }
+
+
+    </script>
+    <link href="./combobox.campformcombo.css" type="text/css" rel="stylesheet"><link href="./fonticons.css" type="text/css" rel="stylesheet"></head>
+<body data-new-gr-c-s-check-loaded="14.993.0" data-gr-ext-installed="">
+    <form name="previewForm" method="post" action="https://secure.campaigner.com/CSB/Public/Form.aspx?fid=1485770" onsubmit="javascript:return WebForm_OnSubmit();" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;SubmitButton&#39;)" id="previewForm" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="ctl03_TSM" id="ctl03_TSM" value=";;System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en-US:db3d9eb3-6d72-4959-b303-32b61119a4a8:ea597d4b:b25378d2">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="RiNTqG6nROIE5x7I4ULcqBUgPd/Wfji+22onmS8TNyQosGMghPMwlFfzqCwRY77kYb38H0BSBo5Twh5PkXVOYUGxXyZrfNwNxjO/fFpHM4V086p456kSoLLxLp8KyIMRxoNwZsHFY9zT0S7xDHL6iYKtgdae3J8fhAyv/s51Z7WtNXgOjJGyjSidVE2Xo9kWngVOHjDMVTm1LG0Kq58kzwFwbwgWcmAkzE4f4BVvLrCOHa+LAVI32TQzeB4y8EPPqo7LekRQWLTkEBxD9n3T1pCjefM=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['previewForm'];
+if (!theForm) {
+    theForm = document.previewForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./WebResource.axd" type="text/javascript"></script>
+
+<style type="text/css">
+.radgrid {  color:black; font-family:Helvetica; font-size:14px; font-weight:normal; text-decoration:none; font-style:Bold; margin-left:25px;; }
+.SignupFormPreview { padding: 10px 0 0 10px; font-size:14px; color:black; font-family:Helvetica; font-weight:normal; text-align:Left; font-style:Bold; text-decoration:none; }
+.btnStyle{background-color:#222222; color:white; }
+#PopupMasterContentArea{ width:380px; }
+</style>
+
+<script src="./ScriptResource.axd" type="text/javascript"></script>
+<script src="./Telerik.Web.UI.WebResource.axd" type="text/javascript"></script>
+<script src="./WebResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5523BD75">
+</div>
+        <div id="previewWrapper" style="text-align:center">
+            
+            
+            
+
+            <div id="LanguageDropdown" class="LanguageDropdown">
+                    
+            </div>
+
+            <div id="formContainer" class="formContainer" style="margin:0 auto;border:3px solid #FFFFFF;background-color:#FFFFFF;">
+
+                <div id="SignupFormPreview" class="SignupFormPreview"><div id="1headerFormatedText"><p id="headerFormatedTextheaderText"><span style="letter-spacing: 2px; text-transform: uppercase; font-family: Montserrat, Arial; font-size: 18px;"><span style="font-size: 18px;"></span>SUBSCRIBE TO RECEIVE LMT E-NEWS!</span></p></div><table id="FormFieldsTable" cellspacing="0" cellpadding="0"><tbody><tr id="FirstName3425414" align="left"><td valign="top"><span id="FirstNameLabel" class="SignupFormPreview" style="display:inline-block;width:100px;text-align:;display:inline-block;overflow:hidden;text-overflow:ellipsis;">First Name:&nbsp;</span></td><td width="15px" style="vertical-align:top;position:relative; top:5px"></td><td><input name="3425414" type="text" maxlength="4000" id="3425414" contactattributeid="3425414" style="width:200px;"></td></tr><tr><td></td><td></td><td></td></tr><tr id="LastName3425419" align="left"><td valign="top"><span id="LastNameLabel" class="SignupFormPreview" style="display:inline-block;width:100px;text-align:;display:inline-block;overflow:hidden;text-overflow:ellipsis;">Last Name:&nbsp;</span></td><td width="15px" style="vertical-align:top;position:relative; top:5px"></td><td><input name="3425419" type="text" maxlength="4000" id="3425419" contactattributeid="3425419" style="width:200px;"></td></tr><tr><td></td><td></td><td></td></tr><tr id="Email3425424" align="left"><td valign="top"><span id="EmailLabel" class="SignupFormPreview" style="display:inline-block;width:100px;text-align:;display:inline-block;overflow:hidden;text-overflow:ellipsis;">Email:&nbsp;</span></td><td width="15px" style="vertical-align:top;position:relative; top:5px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFSSURBVChTTZBNSwJRFIbfsVEHK8VESkyjFom0kAoMRF1UEFItXLRvE9Tf6I+0NWjjyr4hQggpklAiQTNS0UZTsPE7p3vvDNV74d57nvPBOYeTifBPtU4Dr80SLIIJs+N2lSrSqO+v8l8lHGWiuBfTKvkTC376zOC6mGBAy/EoSBW0vrvMTtZecFt5ZH+eXpHcOcqSyJJCTj9zGHWjOMlf4uL9DjInw2tdAOs5IaZY5YfqMyZIr+VWFWa9Ef3hABa9CRsOH0LTfiWYQmnQxhVJiGRP0Rv2AQ7YcgYRnlnFmNYAYUSnBMfLScQKcbKFIqR+GzI5Ai+wgWwGKzYdAazZvcqA0bcbpOtZ+CY9OFw+oAh7rjCzc80CjrNnJF0dcHd+G2KnzpyJjxRF6JBt7Lt3EJhaJL4G7Uqp7DbPIWhbglbDozvsUcSSqe2xuLBuXyEE+AGMTIxCHolN+QAAAABJRU5ErkJggg==" style="border-width:0px;"></td><td><input name="3425424" type="text" maxlength="4000" id="3425424" class=" email" contactattributeid="3425424" style="width:200px;"></td></tr><tr><td></td><td></td><td><span id="Validator3425424" style="color:Red;display:none;">Email is required</span><span id="RegValidator3425424" style="color:Red;display:none;">The email address is not valid</span></td></tr></tbody></table></div>
+
+                
+                
+                <div id="FooterPreview" class="SignupFormPreview"></div>
+                
+                <div id="btnSection" style="padding-bottom: 10px;">
+                    <span id="Label1" style="display:inline-block;width:105px;"></span>
+                        <div style="text-align:center;">
+                            <input type="submit" name="SubmitButton" value="SUBSCRIBE" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="SubmitButton" class="btnStyle">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="FormInfo" id="FormInfo">
+        <input type="hidden" name="AccId" id="AccId">
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl03', 'previewForm', [], [], [], 90, '');
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("Validator3425424"), document.getElementById("RegValidator3425424"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var Validator3425424 = document.all ? document.all["Validator3425424"] : document.getElementById("Validator3425424");
+Validator3425424.controltovalidate = "3425424";
+Validator3425424.errormessage = "Email is required";
+Validator3425424.display = "Dynamic";
+Validator3425424.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+Validator3425424.initialvalue = "";
+var RegValidator3425424 = document.all ? document.all["RegValidator3425424"] : document.getElementById("RegValidator3425424");
+RegValidator3425424.controltovalidate = "3425424";
+RegValidator3425424.errormessage = "The email address is not valid";
+RegValidator3425424.display = "Dynamic";
+RegValidator3425424.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegValidator3425424.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl03_TSM');
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('SubmitButton');
+document.getElementById('Validator3425424').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('Validator3425424'));
+}
+
+document.getElementById('RegValidator3425424').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegValidator3425424'));
+}
+//]]>
+</script>
+</form>
+
+
+</body></html>
